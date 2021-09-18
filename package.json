@@ -2,8 +2,9 @@
   "name": "ng-sandbox",
   "version": "0.0.0",
   "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -41,5 +42,9 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
+  },
+  "engines": {
+    "node": "14.15.3",
+    "npm": "6.14.9"
   }
 }
